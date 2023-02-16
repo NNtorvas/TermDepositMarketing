@@ -1,5 +1,3 @@
-# TermDepositMarketing
-
 ## Background:
 
 We are a small startup focusing mainly on providing machine learning solutions in the European banking market. We work on a variety of problems including fraud detection, sentiment classification and customer intention prediction and classification.
@@ -18,7 +16,7 @@ The data comes from direct marketing efforts of a European banking institution. 
 
 - job : type of job (categorical)
 
--  marital : marital status (categorical)
+- marital : marital status (categorical)
 
 - education (categorical)
 
@@ -43,3 +41,34 @@ The data comes from direct marketing efforts of a European banking institution. 
 ### Output (desired target):
 
 - y - has the client subscribed to a term deposit? (binary)
+
+## Summary of the Project:
+
+Our Analysis was conducted following these steps:
+
+1. Import Libraries and Load Data
+2. Data preprocessing
+3. Exploratory Data Analysis (EDA) - get insights for the company, handle imbalanced dataset and categorical features
+4. Create a base model using Lazypredict library for testing multiple model
+5. Feature Importance
+6. Train Final Model
+
+### Inshights:
+
+* The dataset was clean with no missing, null or duplicated values.
+* There were some clients, who subscripted with negative balance. This does not make sense and maybe is a mistake on these observations of the dataset.
+* The majority of those who have defaulted before or have a personal loan or have a housing loan have not subscribed to a term deposit.
+
+We also saw that clients are more likely to subscribe if: 
+
+1) have tetriary education
+2) are student
+3) are having a cellular contact with the company
+4) their last contact month: october
+5) they are single (marital)
+
+### Conclusion:
+
+* As we saw the duration was the most important feature in predicting if the client will subsribe or not. The client who would want to buy is likely to stay longer on the call in order to know more about the program.
+And the company should persuade the client with last call duration of 11 - 35 minutes. 
+* Also, our model with 90% accuracy on predicting the client's subscription or not will save them time and money.
