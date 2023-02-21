@@ -53,7 +53,7 @@ Our Analysis was conducted following these steps:
 5. Feature Importance
 6. Train Final Model
 
-### Inshights:
+### Insights:
 
 * The dataset was clean with no missing, null or duplicated values.
 * There were some clients, who subscripted with negative balance. This does not make sense and maybe is a mistake on these observations of the dataset.
